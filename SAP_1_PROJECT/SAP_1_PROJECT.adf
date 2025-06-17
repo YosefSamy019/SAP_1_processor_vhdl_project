@@ -29,6 +29,9 @@ fileopenfolder=C:\Users\asus\Downloads
 /B_REGISTER.vhd=-1
 /CONTROLLER_SEQUANCER.vhd=-1
 /SAP_1.vhd=-1
+/test.awc=-1
+/sim.asdb=-1
+/sim.awc=-1
 [Files.Data]
 .\src\ALU.vhd=VHDL Source Code
 .\src\ACCUMULATOR.vhd=VHDL Source Code
@@ -41,6 +44,9 @@ fileopenfolder=C:\Users\asus\Downloads
 .\src\B_REGISTER.vhd=VHDL Source Code
 .\src\CONTROLLER_SEQUANCER.vhd=VHDL Source Code
 .\src\SAP_1.vhd=VHDL Source Code
+.\src\test.awc=Accelerated Waveform Configuration
+.\src\sim.asdb=Accelerated Waveform File
+.\src\sim.awc=Accelerated Waveform Configuration
 [HierarchyViewer]
 HierarchyInformation=sap_1|sap_1|0
 ShowHide=ShowTopLevel

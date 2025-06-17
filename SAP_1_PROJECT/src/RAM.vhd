@@ -61,7 +61,7 @@ begin
 				when "00011" => RAM_OUT <= "01100000"; -- shift left
 				when "00100" => RAM_OUT <= "10100000"; -- out	
 				when "00101" => RAM_OUT <= "11100000"; -- hlt	  
-				when "00110" => RAM_OUT <= "11100000";	 
+				when "00110" => RAM_OUT <= "00000000";	 
 				when "00111" => RAM_OUT <= "11110000";
 				when "01000" => RAM_OUT <= "00100000"; 
 				when "01001" => RAM_OUT <= "00001000";	  

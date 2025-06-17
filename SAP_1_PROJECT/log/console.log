@@ -1,49 +1,6 @@
-# ELBREAD: Elaboration process.
-# ELBREAD: Elaboration time 0.0 [s].
-acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR.vhd $dsn/src/Output_Register.vhd $dsn/src/PC.vhd $dsn/src/RAM.vhd $dsn/src/INSTRUCTION_REGISTER.vhd $dsn/src/MAR.vhd $dsn/src/B_REGISTER.vhd $dsn/src/CONTROLLER_SEQUANCER.vhd $dsn/src/SAP_1.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ARCH" of Entity "ALU"
-# Compile Entity "ACCUMULATOR"
-# Compile Architecture "ACCUMULATOR" of Entity "ACCUMULATOR"
-# Compile Entity "OUTPUT_REGISTER"
-# Compile Architecture "Behavoral" of Entity "OUTPUT_REGISTER"
-# Compile Entity "program_Counter"
-# Compile Architecture "behavorial" of Entity "program_Counter"
-# Compile Entity "RAM"
-# Compile Architecture "BEHAVORAL" of Entity "RAM"
-# Compile Entity "INSTRUCTION_REGISTER"
-# Compile Architecture "INSTRUCTION_REGISTER" of Entity "INSTRUCTION_REGISTER"
-# Compile Entity "MAR"
-# Compile Architecture "MAR" of Entity "MAR"
-# Compile Entity "B_REGISTER"
-# Compile Architecture "B_REGISTER" of Entity "B_REGISTER"
-# Compile Entity "CONTROLLER_SEQUANCER"
-# Compile Architecture "CONTROLLER_SEQUANCER" of Entity "CONTROLLER_SEQUANCER"
-# Compile Entity "SAP_1"
-# Compile Architecture "SAP_1" of Entity "SAP_1"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
-acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR.vhd $dsn/src/Output_Register.vhd $dsn/src/PC.vhd $dsn/src/RAM.vhd $dsn/src/INSTRUCTION_REGISTER.vhd $dsn/src/MAR.vhd $dsn/src/B_REGISTER.vhd $dsn/src/CONTROLLER_SEQUANCER.vhd $dsn/src/SAP_1.vhd
-# Compile Entity "ALU"
-# Compile Architecture "ARCH" of Entity "ALU"
-# Compile Entity "ACCUMULATOR"
-# Compile Architecture "ACCUMULATOR" of Entity "ACCUMULATOR"
-# Compile Entity "OUTPUT_REGISTER"
-# Compile Architecture "Behavoral" of Entity "OUTPUT_REGISTER"
-# Compile Entity "program_Counter"
-# Compile Architecture "behavorial" of Entity "program_Counter"
-# Compile Entity "RAM"
-# Compile Architecture "BEHAVORAL" of Entity "RAM"
-# Compile Entity "INSTRUCTION_REGISTER"
-# Compile Architecture "INSTRUCTION_REGISTER" of Entity "INSTRUCTION_REGISTER"
-# Compile Entity "MAR"
-# Compile Architecture "MAR" of Entity "MAR"
-# Compile Entity "B_REGISTER"
-# Compile Architecture "B_REGISTER" of Entity "B_REGISTER"
-# Compile Entity "CONTROLLER_SEQUANCER"
-# Compile Architecture "CONTROLLER_SEQUANCER" of Entity "CONTROLLER_SEQUANCER"
-# Compile Entity "SAP_1"
-# Compile Architecture "SAP_1" of Entity "SAP_1"
-# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+# Adding file D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\test.awc ... Done
 # Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
 asim -O5 +access +r +m+sap_1 sap_1 sap_1
 # ELBREAD: Elaboration process.
@@ -68,18 +25,176 @@ asim -O5 +access +r +m+sap_1 sap_1 sap_1
 # Allocation: Simulator allocated 6449 kB (elbread=427 elab2=5882 kernel=139 sdf=0)
 # KERNEL: ASDB file was created in location D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\wave.asdb
 # Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
-#  9:33 PM, Friday, May 17, 2024
+#  05:40 �, 03 ������, 2024
 #  Simulation has been initialized
-run
+# VSIM: 22 object(s) traced.
+# Waveform file 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/test.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run @100ns
 # KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 # KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
 # KERNEL: Simulation has finished. There are no more test vectors to simulate.
-# VSIM: 22 object(s) traced.
-# Waveform file 'untitled.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/wave.asdb'.
-run @600ns
-# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-# KERNEL: Time: 35 ns,  Iteration: 2,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
 # KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 950 ns,  Iteration: 2,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 1 us
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6449 kB (elbread=427 elab2=5882 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  05:42 �, 03 ������, 2024
+#  Simulation has been initialized
+# Waveform file 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/test.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/wave.asdb'.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 350 ns,  Iteration: 2,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 400 ns
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+restart
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6449 kB (elbread=427 elab2=5882 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  05:43 �, 03 ������, 2024
+#  Simulation has been initialized
+# Waveform file 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/test.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/wave.asdb'.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 500 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 600 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 700 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 800 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 900 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1 us
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1100 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1200 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1300 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1400 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+run 100 ns
+# KERNEL: stopped at time: 1500 ns
+# KERNEL: Simulation has finished. There are no more test vectors to simulate.
+# Stimuli: Info: The stimuli set "StimuliSet1" has been made active.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 1535 ns,  Iteration: 2,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 1600 ns
+run 100 ns
+# KERNEL: stopped at time: 1700 ns
+run 100 ns
+# KERNEL: stopped at time: 1800 ns
+run 100 ns
+# KERNEL: stopped at time: 1900 ns
+run 100 ns
+# KERNEL: stopped at time: 2 us
+run 100 ns
+# KERNEL: stopped at time: 2100 ns
+run 100 ns
+# KERNEL: stopped at time: 2200 ns
+run 100 ns
+# KERNEL: stopped at time: 2300 ns
+endsim
+# VSIM: Simulation has finished.
 acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR.vhd $dsn/src/Output_Register.vhd $dsn/src/PC.vhd $dsn/src/RAM.vhd $dsn/src/INSTRUCTION_REGISTER.vhd $dsn/src/MAR.vhd $dsn/src/B_REGISTER.vhd $dsn/src/CONTROLLER_SEQUANCER.vhd $dsn/src/SAP_1.vhd
 # Compile Entity "ALU"
 # Compile Architecture "ARCH" of Entity "ALU"
@@ -101,4 +216,88 @@ acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR
 # Compile Architecture "CONTROLLER_SEQUANCER" of Entity "CONTROLLER_SEQUANCER"
 # Compile Entity "SAP_1"
 # Compile Architecture "SAP_1" of Entity "SAP_1"
-# Compile success 0 Errors 0 Warnings  Analysis time :  78.0 [ms]
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+# Error: Accelerated Waveform: Simulation database is not connected. Initialize simulation or load simulation database by opening waveform file (AWC, ASDB).
+asim -O5 +access +r +m+sap_1 sap_1 sap_1
+# ELBREAD: Elaboration process.
+# ELBREAD: Elaboration time 0.0 [s].
+# VSIM: Stack memory: 32MB
+# VSIM: Retval memory: 32MB
+# 
+# KERNEL: Main thread initiated.
+# KERNEL: Kernel process initialization phase.
+# ELAB2: Elaboration final pass...
+# ELAB2: Create instances ...
+# KERNEL: Time resolution set to 1ps.
+# ELAB2: Create instances complete.
+# SLP: Started
+# SLP: Elaboration phase ...
+# SLP: Elaboration phase ... skipped, nothing to simulate in SLP mode : 0.0 [s]
+# SLP: Finished : 0.0 [s]
+# ELAB2: Elaboration final pass complete - time: 0.0 [s].
+# KERNEL: Warning: You are using the Active-HDL Student Edition. The performance of simulation is running at a reduced rate.
+# KERNEL: Warning: Contact Aldec for available upgrade options - sales@aldec.com.
+# KERNEL: Kernel process initialization done.
+# Allocation: Simulator allocated 6449 kB (elbread=427 elab2=5882 kernel=139 sdf=0)
+# KERNEL: ASDB file was created in location D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\wave.asdb
+# Stimuli: Warning: The stimuli set "StimuliSet1" has been made inactive.
+#  05:44 �, 03 ������, 2024
+#  Simulation has been initialized
+# VSIM: 22 object(s) traced.
+# Waveform file 'untitled.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/wave.asdb'.
+#  Port '/SAP_1/CLK' has been found.
+run 100 ns
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 0 ps,  Iteration: 1,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: WARNING: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+# KERNEL: Time: 35 ns,  Iteration: 2,  Instance: /SAP_1/ALU_COM,  Process: line__52.
+# KERNEL: stopped at time: 100 ns
+run @1000ns
+# KERNEL: stopped at time: 1 us
+# Waveform file 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/sim.awc' connected to 'D:/Projects/ALDEC_workspace/SAP_1_PROJECT/SAP_1_PROJECT/src/sim.asdb'.
+# Adding file D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\sim.asdb ... Done
+# Adding file D:\Projects\ALDEC_workspace\SAP_1_PROJECT\SAP_1_PROJECT\src\sim.awc ... Done
+acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR.vhd $dsn/src/Output_Register.vhd $dsn/src/PC.vhd $dsn/src/RAM.vhd $dsn/src/INSTRUCTION_REGISTER.vhd $dsn/src/MAR.vhd $dsn/src/B_REGISTER.vhd $dsn/src/CONTROLLER_SEQUANCER.vhd $dsn/src/SAP_1.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ARCH" of Entity "ALU"
+# Compile Entity "ACCUMULATOR"
+# Compile Architecture "ACCUMULATOR" of Entity "ACCUMULATOR"
+# Compile Entity "OUTPUT_REGISTER"
+# Compile Architecture "Behavoral" of Entity "OUTPUT_REGISTER"
+# Compile Entity "program_Counter"
+# Compile Architecture "behavorial" of Entity "program_Counter"
+# Compile Entity "RAM"
+# Compile Architecture "BEHAVORAL" of Entity "RAM"
+# Compile Entity "INSTRUCTION_REGISTER"
+# Compile Architecture "INSTRUCTION_REGISTER" of Entity "INSTRUCTION_REGISTER"
+# Compile Entity "MAR"
+# Compile Architecture "MAR" of Entity "MAR"
+# Compile Entity "B_REGISTER"
+# Compile Architecture "B_REGISTER" of Entity "B_REGISTER"
+# Compile Entity "CONTROLLER_SEQUANCER"
+# Compile Architecture "CONTROLLER_SEQUANCER" of Entity "CONTROLLER_SEQUANCER"
+# Compile Entity "SAP_1"
+# Compile Architecture "SAP_1" of Entity "SAP_1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  47.0 [ms]
+acom -O3 -e 100 -work SAP_1_PROJECT -2002  $dsn/src/ALU.vhd $dsn/src/ACCUMULATOR.vhd $dsn/src/Output_Register.vhd $dsn/src/PC.vhd $dsn/src/RAM.vhd $dsn/src/INSTRUCTION_REGISTER.vhd $dsn/src/MAR.vhd $dsn/src/B_REGISTER.vhd $dsn/src/CONTROLLER_SEQUANCER.vhd $dsn/src/SAP_1.vhd
+# Compile Entity "ALU"
+# Compile Architecture "ARCH" of Entity "ALU"
+# Compile Entity "ACCUMULATOR"
+# Compile Architecture "ACCUMULATOR" of Entity "ACCUMULATOR"
+# Compile Entity "OUTPUT_REGISTER"
+# Compile Architecture "Behavoral" of Entity "OUTPUT_REGISTER"
+# Compile Entity "program_Counter"
+# Compile Architecture "behavorial" of Entity "program_Counter"
+# Compile Entity "RAM"
+# Compile Architecture "BEHAVORAL" of Entity "RAM"
+# Compile Entity "INSTRUCTION_REGISTER"
+# Compile Architecture "INSTRUCTION_REGISTER" of Entity "INSTRUCTION_REGISTER"
+# Compile Entity "MAR"
+# Compile Architecture "MAR" of Entity "MAR"
+# Compile Entity "B_REGISTER"
+# Compile Architecture "B_REGISTER" of Entity "B_REGISTER"
+# Compile Entity "CONTROLLER_SEQUANCER"
+# Compile Architecture "CONTROLLER_SEQUANCER" of Entity "CONTROLLER_SEQUANCER"
+# Compile Entity "SAP_1"
+# Compile Architecture "SAP_1" of Entity "SAP_1"
+# Compile success 0 Errors 0 Warnings  Analysis time :  62.0 [ms]
